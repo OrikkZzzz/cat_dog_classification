@@ -21,9 +21,9 @@
 
 ## 表现
 
-![冻结 vs 全量微调](docs/figs/freeze_vs_full.png)
+![冻结 vs 全量微调](figs/freeze_vs_full.png)
 
-![参数量 vs 精度](docs/figs/params_vs_acc.png)
+![参数量 vs 精度](figs/params_vs_acc.png)
 
 
 ---
@@ -94,9 +94,9 @@ model.load_state_dict(matched, strict=False)
 
 要求是 >95%，七组全部达标，最低 98.29%，最高 99.44%。
 
-![VGG16 全量微调](docs/figs/curve_vgg16_full.png)
+![VGG16 全量微调](figs/curve_vgg16_full.png)
 
-![ResNet50 冻结主干](docs/figs/curve_resnet50_frozen.png)
+![ResNet50 冻结主干](figs/curve_resnet50_frozen.png)
 
 上面两张图是实验的两个极端
 
@@ -159,7 +159,7 @@ tensorboard --logdir work_dirs
 
 混淆矩阵（ResBet50-freeze）：
 
-![ResNet50 冻结的混淆矩阵](docs/figs/cm_resnet50_frozen.png)
+![ResNet50 冻结的混淆矩阵](figs/cm_resnet50_frozen.png)
 
 3750 张里错 21 张（猫误判成狗 14 张，狗误判成猫 7 张）。猫错得多一倍，但绝对数量只有14张，实际表现已经收敛。
 
