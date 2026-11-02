@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+
+work_dirs/
+*.pth
+*.pt
+runs/
+events.out.tfevents.*
+
+*.tar.gz
+*.zip
+data/
+
+.vscode/
+.idea/
+.DS_Store
