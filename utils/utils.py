@@ -18,10 +18,7 @@ def is_main_process():
 
 
 def setup_distributed():
-    """torchrun 用环境变量传 WORLD_SIZE / RANK / LOCAL_RANK，没有这些就是单卡。
-
-    返回 (rank, world_size, local_rank, distributed)。
-    """
+  
     world_size = int(os.environ.get("WORLD_SIZE", 1))
     if world_size <= 1:
         return 0, 1, 0, False
